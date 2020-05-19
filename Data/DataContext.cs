@@ -8,5 +8,6 @@ namespace TextBasedRPG.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         //  The name of the DbSet will be the name of the corresponding database table
         public DbSet<Character> Characters { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
