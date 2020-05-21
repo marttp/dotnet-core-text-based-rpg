@@ -7,6 +7,11 @@ dotnet run
 # Install DotNet DependencyInjection
 dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
 
+# Install Token package
+dotnet add package Microsoft.IdentityModel.Tokens
+dotnet add package System.IdentityModel.Tokens.Jwt
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
 # Install Entity Framework Core for SQL server
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 # Entity Framework migrations
