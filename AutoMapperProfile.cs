@@ -1,5 +1,6 @@
 using AutoMapper;
 using TextBasedRPG.Dtos.Character;
+using TextBasedRPG.Dtos.Weapon;
 using TextBasedRPG.Models;
 
 namespace TextBasedRPG
@@ -10,6 +11,7 @@ namespace TextBasedRPG
         {
             // ! Egress
             CreateMap<Character, GetCharacterDto>();
+            CreateMap<Weapon, GetWeaponDto>();
             // ! Ingress
             CreateMap<AddCharacterDto, Character>();
         }  

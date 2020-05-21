@@ -9,5 +9,6 @@ namespace TextBasedRPG.Data
         //  The name of the DbSet will be the name of the corresponding database table
         public DbSet<Character> Characters { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Weapon> Weapons { get; set; }
     }
 }

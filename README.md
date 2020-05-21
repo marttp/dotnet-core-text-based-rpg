@@ -24,11 +24,18 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 - You got a file of migration => These files are used by Entity Framework so that it knows what it should do with this migration. They provide information about your tables and fields that Entity Framework uses to build your database
 - 2. dotnet ef database update
 - dotnet ef migrations remove
-  
+
+dotnet ef migrations add User
+dotnet ef migrations add Character
+dotnet ef migrations add Weapon
+
+
 # Add migration
 dotnet ef migrations add [Class]
 # Add relations
 dotnet ef migrations add [class1+class2+Relation]
+
+dotnet ef migrations add UserCharacterRelation
 
 # Knowledge
 - Use generic wrapper class for more ux response
