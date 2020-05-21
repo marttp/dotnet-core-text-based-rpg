@@ -1,5 +1,7 @@
+using System.Linq;
 using AutoMapper;
 using TextBasedRPG.Dtos.Character;
+using TextBasedRPG.Dtos.CharacterSkill;
 using TextBasedRPG.Dtos.Weapon;
 using TextBasedRPG.Models;
 
@@ -10,10 +12,11 @@ namespace TextBasedRPG
         public AutoMapperProfile()
         {
             // ! Egress
-            CreateMap<Character, GetCharacterDto>();
+            CreateMap<Character, GetCharacterDto>().ForMember(dto => dto.Skills, c => c.MapFrom(c => c.CharacterSkills.Select(cs => cs.Skill)));
             CreateMap<Weapon, GetWeaponDto>();
+            CreateMap<Skill, GetSkillDto>();
             // ! Ingress
             CreateMap<AddCharacterDto, Character>();
-        }  
+        }
     }
 }

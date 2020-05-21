@@ -28,7 +28,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet ef migrations add User
 dotnet ef migrations add Character
 dotnet ef migrations add Weapon
-
+dotnet ef migrations add Skill
 
 # Add migration
 dotnet ef migrations add [Class]
