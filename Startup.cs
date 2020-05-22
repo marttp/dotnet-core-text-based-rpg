@@ -19,6 +19,7 @@ using Microsoft.IdentityModel.Tokens;
 using TextBasedRPG.Data;
 using TextBasedRPG.Services.CharacterService;
 using TextBasedRPG.Services.CharacterSkillService;
+using TextBasedRPG.Services.FightService;
 using TextBasedRPG.Services.WeaponService;
 
 namespace TextBasedRPG
@@ -45,6 +46,7 @@ namespace TextBasedRPG
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IWeaponService, WeaponService>();
             services.AddScoped<ICharacterSkillService, CharacterSkillService>();
+            services.AddScoped<IFightService, FightService>();
             // * Add Authen configuration
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>

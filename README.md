@@ -36,6 +36,7 @@ dotnet ef migrations add [Class]
 dotnet ef migrations add [class1+class2+Relation]
 
 dotnet ef migrations add UserCharacterRelation
+dotnet ef migrations add FightProperties
 
 # Knowledge
 - Use generic wrapper class for more ux response
